@@ -1,10 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Text,View,StyleSheet,TouchableOpacity} from 'react-native'
 
 const App=()=>{
+  
+
+  const [randomColor,setRandomColor]=useState("rgb(32,0,126)")
+
   return(
     <>
-    <View style={[styles.container,{backgroundColor:"rgb(32,0,126)"}]}>
+    <View style={[styles.container,{backgroundColor:randomColor}]}>
       <Text style={styles.text}>Tap Me</Text>
     </View>
     </>
